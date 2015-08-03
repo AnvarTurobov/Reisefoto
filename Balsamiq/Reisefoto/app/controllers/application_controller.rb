@@ -17,7 +17,7 @@ end
 
 def authenticate 
   unless logged_in?
-    flash[:error] = "You must be LOGGED IN to access this page"
+    flash[:error] = "Please login"
     redirect_to login_url
   end
 end
