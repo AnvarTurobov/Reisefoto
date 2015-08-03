@@ -1,0 +1,57 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1297" measuredH="264" mockupW="1223" mockupH="249">
+  <controls>
+    <control controlID="108" controlTypeID="__group__" x="74" y="15" w="833" h="166" measuredW="833" measuredH="166" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Downloading</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="0" w="-1" h="-1" measuredW="144" measuredH="36" zOrder="0" locked="false" isInGroup="108">
+          <controlProperties>
+            <color>5263440</color>
+            <size>28</size>
+            <text>MyWebApp</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="789" y="10" w="-1" h="-1" measuredW="43" measuredH="21" zOrder="1" locked="false" isInGroup="108">
+          <controlProperties>
+            <bold>false</bold>
+            <text>%5BSign%20In%5D</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Arrow" x="4" y="46" w="829" h="10" measuredW="150" measuredH="100" zOrder="2" locked="false" isInGroup="108">
+          <controlProperties>
+            <color>13421772</color>
+            <curvature>0</curvature>
+            <direction>top</direction>
+            <leftArrow>false</leftArrow>
+            <rightArrow>false</rightArrow>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="41" y="87" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="3" locked="false" isInGroup="108">
+          <controlProperties>
+            <icon>DownloadIcon%7Clarge</icon>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="95" y="79" w="304" h="-1" measuredW="188" measuredH="24" zOrder="4" locked="false" isInGroup="108">
+          <controlProperties>
+            <size>16</size>
+            <text>Downloading%20MyWebApp...</text>
+          </controlProperties>
+        </control>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Paragraph" x="95" y="111" w="375" h="55" measuredW="200" measuredH="80" zOrder="5" locked="false" isInGroup="108">
+          <controlProperties>
+            <bold>false</bold>
+            <text>Your%20download%20should%20automatically%20start%20within%20seconds.%0AIf%20it%20doesn%27t%2C%20%5Brestart%20the%20download%5D.</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::StickyNote" x="994" y="30" w="303" h="234" measuredW="109" measuredH="123" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>14</size>
+        <text>%7Bcolor%3A%23ff0000%7DAbout%7Bcolor%7D%0ADownloading%20screen%0A%20%0A%7Bcolor%3A%23ff0000%7DInstallation%7Bcolor%7D%0ATo%20use%20as%20a%20symbol%20library%2C%20add%20to%20your%20account%20assets%20or%20to%20a%20project%20assets%20folder.%0A%20%0A%7Bcolor%3A%23ff0000%7DVersion%20History%7Bcolor%7D%0ACreated%20by%20BugCam%20on%2023%20Dec%202011</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

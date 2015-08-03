@@ -1,0 +1,53 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1287" measuredH="621" mockupW="1175" mockupH="574">
+  <controls>
+    <control controlID="7" controlTypeID="__group__" x="112" y="47" w="850" h="574" measuredW="850" measuredH="574" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <controlName>Welcome%20Email</controlName>
+      </controlProperties>
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="0" y="0" w="850" h="574" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="7">
+          <controlProperties>
+            <text>E-mail</text>
+            <topheight>26</topheight>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="18" y="27" w="826" h="78" measuredW="275" measuredH="80" zOrder="1" locked="false" isInGroup="7">
+          <controlProperties>
+            <size>11</size>
+            <text>From%3A%20%20%20%20%20%20%20%20%20%20%20%20%20MyWebApp%20%5Bsupport@mywebapp.com%5D%0ATo%3A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20jessica@example.com%0ACc%3A%0ASubject%3A%20%20%20%20%20%20%20%20%20%20Welcome%20to%20MyWebApp%21</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="826" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="7">
+          <controlProperties>
+            <icon>CircledXIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="802" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="3" locked="false" isInGroup="7">
+          <controlProperties>
+            <icon>CircledMinusIcon%7Csmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="3" y="100" w="847" h="-1" measuredW="100" measuredH="10" zOrder="4" locked="false" isInGroup="7"/>
+        <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="101" y="137" w="-1" h="-1" measuredW="165" measuredH="40" zOrder="5" locked="false" isInGroup="7">
+          <controlProperties>
+            <size>32</size>
+            <text>MyWebApp</text>
+          </controlProperties>
+        </control>
+        <control controlID="6" controlTypeID="com.balsamiq.mockups::Paragraph" x="107" y="192" w="483" h="342" measuredW="275" measuredH="80" zOrder="6" locked="false" isInGroup="7">
+          <controlProperties>
+            <bold>false</bold>
+            <text>Hi%20Jessica%2C%0A%20%0AThanks%20for%20using%20MyWebApp%21%20%20We%20hope%20you%20like%20it.%0A%20%0AHere%20are%20some%20links%20we%20thought%20you%20might%20find%20handy%3A%0A*%20%5BMyWebApp%20Help%20Center%5D%0A*%20%5BSend%20us%20your%20Comments%20and%20Suggestions%5D%0A%20%0AWelcome%21%0AThe%20MyWebApp%20Team%0A%20%0AP.S.%20%20Follow%20us%20on%20%5BTwitter%5D%20and%20%5BFacebook%5D%20and%20%5Binvite%20your%20friends%5D%21</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::StickyNote" x="984" y="47" w="303" h="272" measuredW="109" measuredH="123" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>14</size>
+        <text>%7Bcolor%3A%23ff0000%7DAbout%7Bcolor%7D%0AExample%20WebApp%20Screens%0A%20%0A%7Bcolor%3A%23ff0000%7DInstallation%7Bcolor%7D%0ATo%20use%20as%20a%20symbol%20library%2C%20add%20to%20your%20account%20assets%20or%20to%20a%20project%20assets%20folder.%0A%20%0A%7Bcolor%3A%23ff0000%7DVersion%20History%7Bcolor%7D%0ACreated%20by%20Yarone%20Goren</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
