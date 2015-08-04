@@ -25,10 +25,10 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new user_params
-
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+      session[:user_id] = @user.id
+        format.html { redirect_to @user } #notice: 'User was successfully created.' 
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -54,6 +54,7 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    session[:user_id] = nil
     @user.destroy
     respond_to do |format|
       format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
@@ -71,4 +72,4 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :role)
     end
-end
+  end

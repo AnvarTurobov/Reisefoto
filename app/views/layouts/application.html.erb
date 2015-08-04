@@ -8,16 +8,33 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<header>
-<nav>
-  <ul>
-    <li><a href="/">Reisefoto</a></li>
-    <li><a href="/users">Photographers</a></li>
-    <li><a href="/users">Clients</a></li>
-    <li><a href="/login">Sign in</a></li>
-  </ul>
-</nav>
-</header>
-<%= yield %>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/">Reisefoto</a></li>
+        <% unless current_user %>
+        <li><%= link_to 'Sign up', new_user_path %></li> 
+        <li><a href="/login">Log in </a></li> 
+        <% end %>
+        <% if current_user %>
+        <li><%= link_to "Logout", logout_path, method: :delete, data: { confirm: "Are you sure?"} %></li>
+        <% end %>
+        <li><a href="/users">Photographers</a></li>
+        <li><a href="/users">Clients</a></li>
+      </ul>
+    </nav>
+  </header>
+  <% if current_user %>
+  <p> Hello, <%= current_user.first_name %></p>
+  <% else%>
+  <% link_to "Please Login", login_path %>
+  <% end %>
+  <% flash.each do |name, message| %>
+  <div class="flash-message flash-message-<%= name %>">
+    <%= message %>
+  </div>
+  <% end %>
+  <%= yield %>
 </body>
 </html>
+

@@ -9,4 +9,7 @@
     <%= password_field_tag :password %>
   </div>
   <div class="actions"><%= submit_tag "Log in" %></div>
+  <li><%= link_to 'Sign up', new_user_path %></li>
+  <% if @user != current_user %>
+  <% end %>
 <% end %>
