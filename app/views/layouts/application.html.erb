@@ -13,7 +13,7 @@
       <ul>
         <li><a href="/">Reisefoto</a></li>
         <% unless current_user %>
-        <li><%= link_to 'Sign up', new_user_path %></li> 
+        <li><%= link_to 'Sign up', "/users/new?role=c" %></li> 
         <li><a href="/login">Log in </a></li> 
         <% end %>
         <% if current_user %>
@@ -21,7 +21,7 @@
         <% end %>
         <li><a href="/users">Photographers</a></li>
         <li><a href="#">Photoshoot ideas</a></li>
-        <li><a href="/join_the_team">Join The Team</a></li>
+        <li><a href="/users/new?role=p">Join The Team</a></li>
         <li><a href="/users">Clients</a></li>
       </ul>
     </nav>
