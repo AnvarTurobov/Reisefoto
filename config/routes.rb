@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :photos
   resources :users 
   get "login", to: "sessions#new" 
-  delete "logout", to: "sessions#destroy"
+  get "/join_the_team", to: "users#new"
+  delete "/logout", to: "sessions#destroy"
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803140543) do
+ActiveRecord::Schema.define(version: 20150804135321) do
 
   create_table "locations", force: :cascade do |t|
     t.string   "country"
@@ -26,8 +26,14 @@ ActiveRecord::Schema.define(version: 20150803140543) do
     t.string   "email"
     t.string   "password_digest"
     t.string   "role"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.string   "phone_number"
+    t.string   "country"
+    t.string   "city"
+    t.string   "currency"
+    t.string   "price_for_2_hour_photoshoot"
+    t.string   "upload_professional_photo"
   end
 
 end
