@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
-gem 'cancancan', '~> 1.10'
 gem 'ransack', '~> 1.6.6'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'

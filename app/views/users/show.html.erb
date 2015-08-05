@@ -4,25 +4,34 @@
   <strong>First name:</strong>
   <%= @user.first_name %>
 </p>
-
 <p>
   <strong>Last name:</strong>
   <%= @user.last_name %>
 </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<p>
-  <strong>Role:</strong>
-  <%= @user.role %>
-</p>
-
-
-<% if @user == current_user %>
-<%= link_to 'Edit', edit_user_path(@user) %> 
-<%= link_to 'Destroy', @user, method: :delete, data: { confirm: 'Are you sure?' } %>    
-<%= link_to 'Back', users_path %>
+<% if @user.role == "p" %>
+  <p>
+    <strong>Phone number:</strong>
+    <%= @user.phone_number %>
+  </p>
+  <p>
+    <strong>Country:</strong>
+    <%= @user.location.country %>
+  </p>
+  <p>
+    <strong>City:</strong>
+    <%= link_to @user.location.city, @user.location %>
+  </p>
+  <p>
+    <strong>Currency:</strong>
+    <%= @user.currency %>
+  </p>
+  <p>
+    <strong>Price for 2 hours photoshoot:</strong>
+    <%= @user.price %>
+  </p>
+  <p>
+    <strong>Upload Photos:</strong>
+    <%= @user.upload_professional_photo %>
+  </p>
 <% end %>

@@ -10,5 +10,12 @@
   <%= @location.city %>
 </p>
 
+<h3>Photographer in <%= @location.city %></h3>
+<% @location.photographers.each do |photographer| %>
+<ul>
+  <li><%= link_to photographer.first_name, photographer %></li>
+</ul>
+<% end %>
+
 <%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>

@@ -26,13 +26,13 @@ ActiveRecord::Schema.define(version: 20150804135321) do
     t.string   "email"
     t.string   "password_digest"
     t.string   "role"
-    t.datetime "created_at",                  null: false
-    t.datetime "updated_at",                  null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
     t.string   "phone_number"
     t.string   "country"
-    t.string   "city"
+    t.integer  "location_id"
     t.string   "currency"
-    t.string   "price_for_2_hour_photoshoot"
+    t.integer  "price"
     t.string   "upload_professional_photo"
   end
 
