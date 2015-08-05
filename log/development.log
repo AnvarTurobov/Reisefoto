@@ -35820,3 +35820,743 @@ Migrating to AddPhotographerIdToPhoto (20150805082903)
   [1m[35m (0.0ms)[0m  begin transaction
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "Germany"], ["city", "Belin"], ["created_at", "2015-08-05 09:18:46.593432"], ["updated_at", "2015-08-05 09:18:46.593432"]]
   [1m[35m (1.6ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2015-08-05 10:19:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 335ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/application_controller.rb:10:in `current_user'
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb__347500469513370397_70102158914800'
+
+
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.8ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.9ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.7ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (45.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-05 10:20:03 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 63ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/locations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/photos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/scaffolds.self-a7911dff368e040b09bf67c710e6571f4aaff2bf458ed3a0ecf32548d1207aa0.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/style.self-9afd8a267cdeeb7117a4ec293c432f7fe830b7bad48a44a96b25eb16f05d4c00.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/css/style.css" for ::1 at 2015-08-05 10:20:03 +0100
+
+ActionController::RoutingError (No route matches [GET] "/css/style.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/locations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/pages_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/photos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-05 10:20:03 +0100
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:06 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 59ms (Views: 58.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:08 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 60ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:09 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 73ms (Views: 72.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:10 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:10 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 81ms (Views: 80.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 76ms (Views: 75.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:12 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 57ms (Views: 56.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2015-08-05 10:20:14 +0100
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new?role=p" for ::1 at 2015-08-05 10:20:16 +0100
+Processing by UsersController#new as HTML
+  Parameters: {"role"=>"p"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/_form.html.erb (39.5ms)
+  Rendered users/new.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 118ms (Views: 101.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:17 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new?role=p" for ::1 at 2015-08-05 10:20:17 +0100
+Processing by UsersController#new as HTML
+  Parameters: {"role"=>"p"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/_form.html.erb (5.2ms)
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 68ms (Views: 67.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:18 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 64ms (Views: 62.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new?role=p" for ::1 at 2015-08-05 10:20:18 +0100
+Processing by UsersController#new as HTML
+  Parameters: {"role"=>"p"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:19 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 69.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/new?role=p" for ::1 at 2015-08-05 10:20:19 +0100
+Processing by UsersController#new as HTML
+  Parameters: {"role"=>"p"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/_form.html.erb (4.6ms)
+  Rendered users/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 76ms (Views: 75.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:20:20 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 66ms (Views: 65.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new?role=p" for ::1 at 2015-08-05 10:20:21 +0100
+Processing by UsersController#new as HTML
+  Parameters: {"role"=>"p"}
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations"
+  Rendered users/_form.html.erb (4.3ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2015-08-05 10:21:04 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dnvlXvDLLM680BClXoQUw/Zew732HmfPoxyR8Fxh5RV1nsKrNY+SFZSrTizjuvjPglaEVZq+J51W3bhLYxvgew==", "user"=>{"first_name"=>"Emily", "last_name"=>"Isake", "email"=>"emily@ga.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "role"=>"p", "phone_number"=>"07767625632", "location_id"=>"1", "currency"=>"GBP", "price"=>"250", "upload_professional_photo"=>""}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("first_name", "last_name", "email", "password_digest", "role", "phone_number", "location_id", "currency", "price", "upload_professional_photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["first_name", "Emily"], ["last_name", "Isake"], ["email", "emily@ga.com"], ["password_digest", "$2a$10$4cpOQ4YAEe72cwUuj7vV6.xixiZEz3miqlhegK4AhVGrsxlp7yyfu"], ["role", "p"], ["phone_number", "07767625632"], ["location_id", 1], ["currency", "GBP"], ["price", 250], ["upload_professional_photo", ""], ["created_at", "2015-08-05 09:21:04.118688"], ["updated_at", "2015-08-05 09:21:04.118688"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 71ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users/1" for ::1 at 2015-08-05 10:21:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.2ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photographer_id" = ?  [["photographer_id", 1]]
+  Rendered users/show.html.erb within layouts/application (23.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 103ms (Views: 101.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/css/style.css" for ::1 at 2015-08-05 10:21:04 +0100
+
+ActionController::RoutingError (No route matches [GET] "/users/css/style.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.5ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:21:07 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 59ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:21:09 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 60ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:21:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 69ms (Views: 67.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:21:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 66ms (Views: 64.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:21:10 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:21:13 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 63ms (Views: 61.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2015-08-05 10:21:14 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_form.html.erb (3.7ms)
+  Rendered users/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:21:16 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 61ms (Views: 59.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2015-08-05 10:21:19 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mLocation Load (0.1ms)[0m  [1mSELECT  "locations".* FROM "locations" WHERE "locations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mPhoto Load (0.1ms)[0m  SELECT "photos".* FROM "photos" WHERE "photos"."photographer_id" = ?  [["photographer_id", 1]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.4ms)
+  [1m[36m (28.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateLocations (20150803134319)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "country" varchar, "city" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803134319"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to CreateUsers (20150803140543)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803140543"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Migrating to AddColumnToUsers (20150804135321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "phone_number" varchar
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "country" varchar[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "location_id" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "currency" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "price" integer
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "upload_professional_photo" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150804135321"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePhotos (20150805082518)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image" text, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150805082518"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Migrating to AddPhotographerIdToPhoto (20150805082903)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "photos" ADD "photographer_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150805082903"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "England"], ["city", "London"], ["created_at", "2015-08-05 09:22:06.458351"], ["updated_at", "2015-08-05 09:22:06.458351"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["country", "France"], ["city", "Paris"], ["created_at", "2015-08-05 09:22:06.462132"], ["updated_at", "2015-08-05 09:22:06.462132"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "Italy"], ["city", "Rome"], ["created_at", "2015-08-05 09:22:06.465397"], ["updated_at", "2015-08-05 09:22:06.465397"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["country", "Spain"], ["city", "Madrid"], ["created_at", "2015-08-05 09:22:06.468028"], ["updated_at", "2015-08-05 09:22:06.468028"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "Germany"], ["city", "Belin"], ["created_at", "2015-08-05 09:22:06.470422"], ["updated_at", "2015-08-05 09:22:06.470422"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[36m (1.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateLocations (20150803134319)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "country" varchar, "city" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803134319"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to CreateUsers (20150803140543)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803140543"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Migrating to AddColumnToUsers (20150804135321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "phone_number" varchar
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "country" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "location_id" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "currency" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "price" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "upload_professional_photo" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150804135321"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePhotos (20150805082518)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image" text, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150805082518"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Migrating to AddPhotographerIdToPhoto (20150805082903)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "photos" ADD "photographer_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150805082903"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "England"], ["city", "London"], ["created_at", "2015-08-05 09:25:13.678627"], ["updated_at", "2015-08-05 09:25:13.678627"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["country", "France"], ["city", "Paris"], ["created_at", "2015-08-05 09:25:13.681558"], ["updated_at", "2015-08-05 09:25:13.681558"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "Italy"], ["city", "Rome"], ["created_at", "2015-08-05 09:25:13.685084"], ["updated_at", "2015-08-05 09:25:13.685084"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["country", "Spain"], ["city", "Madrid"], ["created_at", "2015-08-05 09:25:13.689316"], ["updated_at", "2015-08-05 09:25:13.689316"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "Germany"], ["city", "Belin"], ["created_at", "2015-08-05 09:25:13.692691"], ["updated_at", "2015-08-05 09:25:13.692691"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (2.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateLocations (20150803134319)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "country" varchar, "city" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803134319"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to CreateUsers (20150803140543)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar, "email" varchar, "password_digest" varchar, "role" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803140543"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to AddColumnToUsers (20150804135321)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "phone_number" varchar
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "country" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "location_id" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "currency" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "price" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "upload_professional_photo" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150804135321"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreatePhotos (20150805082518)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "photos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "image" text, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150805082518"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Migrating to AddPhotographerIdToPhoto (20150805082903)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "photos" ADD "photographer_id" integer[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150805082903"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "England"], ["city", "London"], ["created_at", "2015-08-05 09:25:33.766656"], ["updated_at", "2015-08-05 09:25:33.766656"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["country", "France"], ["city", "Paris"], ["created_at", "2015-08-05 09:25:33.769442"], ["updated_at", "2015-08-05 09:25:33.769442"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "Italy"], ["city", "Rome"], ["created_at", "2015-08-05 09:25:33.772116"], ["updated_at", "2015-08-05 09:25:33.772116"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["country", "Spain"], ["city", "Madrid"], ["created_at", "2015-08-05 09:25:33.775128"], ["updated_at", "2015-08-05 09:25:33.775128"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "locations" ("country", "city", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["country", "Germany"], ["city", "Belin"], ["created_at", "2015-08-05 09:25:33.778529"], ["updated_at", "2015-08-05 09:25:33.778529"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+
+
+Started GET "/users/1" for ::1 at 2015-08-05 10:27:45 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 24ms (ActiveRecord: 0.5ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:68:in `set_user'
+
+
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.7ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (44.0ms)
+
+
+Started GET "/users/1" for ::1 at 2015-08-05 10:27:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:68:in `set_user'
+
+
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.7ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.9ms)
+
+
+Started GET "/users/1" for ::1 at 2015-08-05 10:28:02 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  app/controllers/users_controller.rb:68:in `set_user'
+
+
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.9ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.9ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-05 10:28:05 +0100
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 296ms (Views: 295.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/css/style.css" for ::1 at 2015-08-05 10:28:05 +0100
+
+ActionController::RoutingError (No route matches [GET] "/css/style.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.9ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.1ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.2ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.6ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/anvarturobov/.rbenv/versions/2.1.4/lib/ruby/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:28:09 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 61ms (Views: 60.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:28:11 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:28:11 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 71.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:28:11 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 92.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:28:11 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 74ms (Views: 73.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2015-08-05 10:28:12 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 74ms (Views: 73.1ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddProfilePhotoToUsers (20150805095157)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "profile_photo" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150805095157"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

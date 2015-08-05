@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150805082903) do
+ActiveRecord::Schema.define(version: 20150805095157) do
 
   create_table "locations", force: :cascade do |t|
     t.string   "country"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150805082903) do
     t.string   "currency"
     t.integer  "price"
     t.string   "upload_professional_photo"
+    t.string   "profile_photo"
   end
 
 end

@@ -13,5 +13,4 @@ Location.create!(country: "Spain", city: "Madrid")
 Location.create!(country: "Germany", city: "Belin")
 
 
-User.create!(id: 1, first_name: "Gabriele", last_name: "Lacopetti", email: "gabriele@ga.com", role: "p", phone_number: "07767654323", country: Italy, location_id: 3, currency: "euro", price: 300)
-
+User.create!(first_name: "Gabriele", last_name: "Lacopetti", email: "gabriele@ga.com", role: "p", phone_number: "07767654323", country: "Italy", location_id: 3, currency: "euro", price: 300)
