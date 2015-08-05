@@ -25,21 +25,26 @@
         <% unless current_user %>
         <li><a href="/users/new?role=p">Join The Team</a></li>
         <% end %>
-        <li><a href="/users">About us</a></li>
-      </ul>
-    </nav>
-  </header>
-  <% if current_user %>
-  <p> Hello, <%= current_user.first_name %></p>
-  <% else%>
-  <% link_to "Please Login", login_path %>
-  <% end %>
-  <% flash.each do |name, message| %>
-  <div class="flash-message flash-message-<%= name %>">
-    <%= message %>
-  </div>
-  <% end %>
-  <%= yield %>
-</body>
-</html>
+        <!--      <li><a href="/users">About us</a></li> -->
+        <li><%= search_form_for @q, url: search_users_path, html: { method: :post }  do |f| %>
+        <%= f.label :first_name_cont,'Search' %></li>
+         </li><%= f.text_field :first_name_cont %></li>
+         <li><%= f.submit class: 'button' %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </header>
+    <% if current_user %>
+    <p> Hello, <%= current_user.first_name %></p>
+    <% else%>
+    <% link_to "Please Login", login_path %>
+    <% end %>
+    <% flash.each do |name, message| %>
+    <div class="flash-message flash-message-<%= name %>">
+      <%= message %>
+    </div>
+    <% end %>
+    <%= yield %>
+  </body>
+  </html>
 

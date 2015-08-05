@@ -62,6 +62,12 @@ class UsersController < ApplicationController
     end
   end
 
+  def search
+     @q = User.search(params[:q])
+     @users = @q.result(distinct: true)
+     render :index
+   end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
@@ -70,6 +76,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :role, :phone_number, :country, :location_id, :currency, :price, :upload_professional_photo)
+      params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :role, :phone_number, :country, :location_id, :currency, :price, :upload_professional_photo, :profile_photo)
     end
-  end
+    end

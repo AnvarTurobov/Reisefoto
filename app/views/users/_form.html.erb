@@ -41,8 +41,8 @@
   <%= f.collection_select :location_id, Location.all, :id, :city %>
 </div>
 <div class="field">
-  <%= f.label :currency %><br>
-  <%= f.text_field :currency %>
+  <%= f.label :currency %>
+  <%= f.select :currency, [['GBP'],['EUR'],['USD'], ['CNY']] %>
 </div>
 <div class="field">
   <%= f.label :price %><br>
@@ -51,6 +51,10 @@
 <div class="field">
   <%= f.label :upload_professional_photo %><br>
   <%= f.text_field :upload_professional_photo %>
+</div>
+<div class="field">
+  <%= f.label :profile_photo %><br />
+  <%= f.file_field :profile_photo %>
 </div>
 <% end %>
 <div class="actions">

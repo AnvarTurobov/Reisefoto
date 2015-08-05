@@ -19,7 +19,6 @@ h1, h2 {
   font-size: 30px;
 }
 
-
 header {
   width: 100%;
   background: black;
@@ -27,9 +26,9 @@ header {
 
 header nav { 
   max-width: 960px;
-  margin: 0 auto;
-  height: 60px;
-  line-height: 60px;
+/*  margin: 0 auto;*/
+  height: 150px;
+  line-height: 50px;
 }
 
 header nav ul {
@@ -40,7 +39,6 @@ header nav ul {
 header nav ul li:first-child {
   float: left;
   padding: 0;
-  font-size: 35px;
 }
 
 header nav ul li {
@@ -48,13 +46,18 @@ header nav ul li {
   list-style-type: none;
   height: 60px;
   line-height: 60px;
-  float: right;
+  /*float: right;*/
   padding: 0 10px;
 }
+
 
 header nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+header nav ul li label {
+  color: white;
 }
 
 main, footer {
@@ -70,9 +73,9 @@ main ul {
 
 
 input, select {
-  display: block;
+  display: inline-block;
   line-height: 2;
-  width: 300px;
+  width: 150px;
   margin: 0 0 10px;
 }
 
@@ -83,11 +86,12 @@ input[type=submit],
   padding: 10px;
   text-transform: uppercase;
   font-weight: 700;
-  width: 305px;
+  width: 150px;
+  line-height: 2;
   color: #535454;
   text-decoration: none;
   display: block;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 footer {

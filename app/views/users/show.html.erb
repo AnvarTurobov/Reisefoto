@@ -34,6 +34,10 @@
     <strong>Upload Photos:</strong>
     <%= @user.upload_professional_photo %>
   </p>
+  <p>
+    <b>Profile Photo:</b>
+    <%= image_tag @user.profile_photo.url %>
+  </p>
   <h3><%= "#{@user.first_name}'s Photos"%></h3>
   <u>
     <% @user.photos.each do |photo| %>
