@@ -4,7 +4,12 @@ Rails.application.routes.draw do
   root "pages#home"
   resources :sessions, only:[:new, :create, :destroy]
   resources :photos
-  resources :users 
+  resources :users do
+    member do 
+      put "like" 
+      put "dislike"
+      end
+    end
   get "login", to: "sessions#new" 
   get "/join_the_team", to: "users#new"
   delete "/logout", to: "sessions#destroy"
