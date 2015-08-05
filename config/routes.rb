@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :photos
   resources :locations
   root "pages#home"
   resources :sessions, only:[:new, :create, :destroy]
