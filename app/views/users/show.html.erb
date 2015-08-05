@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+
+<%= image_tag @user.profile_photo.url, width: 200 %>
 <p>
   <strong>First name:</strong>
   <%= @user.first_name %>
@@ -8,6 +10,7 @@
   <strong>Last name:</strong>
   <%= @user.last_name %>
 </p>
+<% if !!current_user %>
 <% if @user.role == "p" %>
 <p>
   <strong>Phone number:</strong>
@@ -29,31 +32,32 @@
   <strong>Price for 2 hours photoshoot:</strong>
   <%= @user.price %>
 </p>
-<p>
-  <strong>Upload Photos:</strong>
-  <%= @user.upload_professional_photo %>
-</p>
-<p>
-  <b>Profile Photo:</b>
-  <%= image_tag @user.profile_photo.url %>
-</p>
-<h3><%= "#{@user.first_name}'s Photos"%></h3>
+
+<h3><%= "#{@user.first_name}'s Portfolio"%></h3>
 <ul>
   <% @user.photos.each do |photo| %>
-  <li><%= image_tag photo.image, width: '200' %></li>
+  <li><%= link_to(image_tag(photo.image, width: '200'), photo) %></li>
   <% end %>
 </ul>
+
 <%= link_to "Like", like_user_path(@user), method: :put %>
 <%= link_to "Dislike", dislike_user_path(@user), method: :put %>
 <%=  @user.get_likes.size %>
 <%=  @user.get_dislikes.size %>
 
-<h2>Photos</h2>
-<%= link_to "Add photos", new_photo_path %>
-<ul>
-  <%= render @user.photos %>
-</ul>
+<% end %>
+<% else %>
+<p>
+  <strong>Price for 2 hours photoshoot:</strong>
+  <%= @user.price %>
+</p>
 
+<h3><%= "#{@user.first_name}'s Portfolio"%></h3>
+<ul>
+  <% @user.photos.each do |photo| %>
+  <li><%= link_to(image_tag(photo.image, width: '200'), photo) %></li>
+  <% end %>
+</ul>
 <% end %>
 
 
