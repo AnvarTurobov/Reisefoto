@@ -34,4 +34,16 @@
     <strong>Upload Photos:</strong>
     <%= @user.upload_professional_photo %>
   </p>
+  <h3><%= "#{@user.first_name}'s Photos"%></h3>
+  <u>
+    <% @user.photos.each do |photo| %>
+      <li><%= image_tag photo.image, width: '200' %></li>
+    <% end %>
+  </u>
 <% end %>
+
+
+
+
+
+

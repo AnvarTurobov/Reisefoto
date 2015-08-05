@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+  <%= current_user.id %>
+
   <div class="field">
     <%= f.label :image %><br>
     <%= f.text_area :image %>
@@ -18,6 +20,9 @@
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :photographer_id, :value => current_user.id %>
   </div>
   <div class="actions">
     <%= f.submit %>
