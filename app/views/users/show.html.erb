@@ -10,12 +10,6 @@
   <strong>Last name:</strong>
   <%= @user.last_name %>
 </p>
-<% if !!current_user %>
-<% if @user.role == "p" %>
-<p>
-  <strong>Phone number:</strong>
-  <%= @user.phone_number %>
-</p>
 <p>
   <strong>Country:</strong>
   <%= @user.location.country %>
@@ -23,6 +17,13 @@
 <p>
   <strong>City:</strong>
   <%= link_to @user.location.city, @user.location %>
+</p>
+
+<% if !!current_user %>
+<% if @user.role == "p" %>
+<p>
+  <strong>Phone number:</strong>
+  <%= @user.phone_number %>
 </p>
 <p>
   <strong>Currency:</strong>

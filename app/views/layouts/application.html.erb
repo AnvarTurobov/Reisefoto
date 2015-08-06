@@ -1,50 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Reisefoto</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "vendor/modernizr" %>
+  <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Reisefoto</a></li>
-        <% unless current_user %>
-        <li><%= link_to 'Sign up', "/users/new?role=c" %></li> 
-        <li><a href="/login">Log in </a></li> 
-        <% end %>
-        <% if current_user %>
-        <li><%= link_to "Logout", logout_path, method: :delete, data: { confirm: "Are you sure?"} %></li>
-        <li><%= link_to 'Edit Profile', edit_user_path(current_user) %> </li>
-        <% end %>
-        <li><a href="/users">Photographers</a></li>
-        <li><a href="/">Photoshoot ideas</a></li>
-        <% unless current_user %>
-        <li><a href="/users/new?role=p">Join The Team</a></li>
-        <% end %>
-        <!--      <li><a href="/users">About us</a></li> -->
-        <li><%= search_form_for @q, url: search_users_path, html: { method: :post }  do |f| %>
-        <%= f.label :first_name_cont,'Search' %></li>
-         </li><%= f.text_field :first_name_cont %></li>
-         <li><%= f.submit class: 'button' %></li>
-          <% end %>
-        </ul>
-      </nav>
-    </header>
-    <% if current_user %>
-    <p> Hello, <%= current_user.first_name %></p>
-    <% else%>
-    <% link_to "Please Login", login_path %>
-    <% end %>
-    <% flash.each do |name, message| %>
-    <div class="flash-message flash-message-<%= name %>">
-      <%= message %>
-    </div>
-    <% end %>
-    <%= yield %>
-  </body>
-  </html>
-
+<%= render "layouts/header" %>
+  <% if current_user %>
+  <p> Hello, <%= current_user.first_name %></p>
+  <% else%>
+  <% link_to "Please Login", login_path %>
+  <% end %>
+  <% flash.each do |name, message| %>
+  <div class="flash-message flash-message-<%= name %>">
+    <%= message %>
+  </div>
+  <% end %>
+  <%= yield %>
+</body>
+</html>

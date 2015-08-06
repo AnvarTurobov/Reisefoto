@@ -25,6 +25,6 @@ def authenticate
 end
 
 def set_global_search_variable
-    @q = User.search(params[:q]) 
-  end 
+  @q = User.search(params[:q]) 
+end 
 end
