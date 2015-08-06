@@ -35,11 +35,13 @@
 </p>
 
 <h3><%= "#{@user.first_name}'s Portfolio"%></h3>
-<ul>
-  <% @user.photos.each do |photo| %>
-  <li><%= link_to(image_tag(photo.image, width: '200'), photo) %></li>
-  <% end %>
-</ul>
+<li class="photo large-4 medium-6 columns">
+  <ul>
+    <% @user.photos.each do |photo| %>
+    <li><%= link_to(image_tag(photo.image, width: '200'), photo) %></li>
+    <% end %>
+  </ul>
+</li>
 
 <%= link_to "Like", like_user_path(@user), method: :put %>
 <%= link_to "Dislike", dislike_user_path(@user), method: :put %>
@@ -57,8 +59,9 @@
 <ul>
   <% @user.photos.each do |photo| %>
   <li><%= link_to(image_tag(photo.image, width: '200'), photo) %></li>
-  <% end %>
 </ul>
+<% end %>
+</li>
 <% end %>
 
 

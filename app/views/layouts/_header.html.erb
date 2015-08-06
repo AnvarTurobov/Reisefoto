@@ -8,6 +8,9 @@
   </ul>
   <section class="top-bar-section">
     <ul class="right">
+    <% if current_user %>
+    <li><a><%= current_user.first_name %></a></li>
+    <% end %>
     <li class="active"><%= search_form_for @q, url: search_users_path, html: { method: :post }  do |f| %>
        <%= f.text_field :first_name_cont %></li>
        <li><%= f.submit class: 'button' %></li>
